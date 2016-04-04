@@ -1,6 +1,7 @@
 import org.junit.Test;
 import singleton.*;
 
+import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.Callable;
@@ -106,4 +107,25 @@ public class SingletonTest {
         assertTrue(singletonFirst == singletonSecond);
     }
 
+    @Test
+    public void serializationBreaksSingleton() {
+
+        SerializableSingleton singletonFirst = SerializableSingleton.getInstance();
+        SerializableSingleton singletonSecond = null;
+
+        try(ObjectOutput output = new ObjectOutputStream(new FileOutputStream("C:\\Games\\serial.txt"));
+            ObjectInput input = new ObjectInputStream(new FileInputStream("C:\\Games\\serial.txt"))) {
+            output.writeObject(singletonFirst);
+            singletonSecond = (SerializableSingleton) input.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        assertNotNull(singletonFirst);
+        assertNotNull(singletonSecond);
+        assertTrue(singletonFirst instanceof SerializableSingleton);
+        assertTrue(singletonFirst == singletonSecond);
+    }
 }
