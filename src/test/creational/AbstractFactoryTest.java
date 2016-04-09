@@ -1,9 +1,12 @@
+package creational;
+
 import abstractFactory.MinyVanFactory;
 import abstractFactory.SedanFactory;
 import abstractFactory.VehicleGeneratorFactory;
 import factory.Vehicle;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Alex Veng on 04.04.2016.

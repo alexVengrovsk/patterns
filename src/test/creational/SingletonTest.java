@@ -1,3 +1,5 @@
+package creational;
+
 import org.junit.Test;
 import singleton.*;
 
@@ -9,7 +11,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
 
 /**
  * Created by Alex Veng on 03.04.2016.

@@ -1,4 +1,6 @@
-import Builder.Computer;
+package creational;
+
+import builder.Computer;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -13,7 +15,7 @@ public class BuilderTest {
 
         Computer computer = new Computer.ComputerBuilder(1, 234, 34)
                 .setProcessor("AMD")
-                .setType("DesckTop")
+                .setType("DeskTop")
                 .build();
 
         assertNotNull(computer);
