@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 /**
  * Created by Alex Veng on 04.04.2016.

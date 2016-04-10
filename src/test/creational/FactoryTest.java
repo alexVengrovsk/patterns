@@ -1,9 +1,9 @@
 package creational;
 
-import factory.MinyVan;
-import factory.Sedan;
-import factory.Vehicle;
-import factory.VehicleFactory;
+import creational.factory.MinyVan;
+import creational.factory.Sedan;
+import creational.factory.Vehicle;
+import creational.factory.VehicleFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

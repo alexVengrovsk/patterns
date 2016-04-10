@@ -1,7 +1,7 @@
 package creational;
 
+import creational.singleton.*;
 import org.junit.Test;
-import singleton.*;
 
 import java.io.*;
 import java.lang.reflect.Constructor;

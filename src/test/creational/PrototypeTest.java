@@ -1,8 +1,8 @@
 package creational;
 
+import creational.prototype.Prototype;
 import org.junit.Before;
 import org.junit.Test;
-import prototype.Prototype;
 
 import java.util.List;
 

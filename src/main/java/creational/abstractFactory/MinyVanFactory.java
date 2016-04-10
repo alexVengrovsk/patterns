@@ -1,7 +1,7 @@
-package abstractFactory;
+package creational.abstractFactory;
 
-import factory.MinyVan;
-import factory.Vehicle;
+import creational.factory.MinyVan;
+import creational.factory.Vehicle;
 
 /**
  * Created by Alex Veng on 04.04.2016.

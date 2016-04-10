@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 import java.io.Serializable;
 
@@ -18,7 +18,7 @@ public class SerializableSingleton implements Serializable {
     }
 
     /**
-     * Prevent singleton from destroying by serialization
+     * Prevent creational.singleton from destroying by serialization
      * @return instance of the <b>SerializableSingleton</b>
      */
     protected Object readResolve() {

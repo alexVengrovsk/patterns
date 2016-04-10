@@ -1,6 +1,6 @@
 package creational;
 
-import builder.Computer;
+import creational.builder.Computer;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

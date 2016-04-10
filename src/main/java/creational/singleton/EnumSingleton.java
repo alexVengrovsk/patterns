@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 /**
  * Created by Alex Veng on 04.04.2016.
@@ -8,6 +8,6 @@ public enum EnumSingleton {
     INSTANCE;
 
     public static void doSmth() {
-        System.out.println("Enum singleton");
+        System.out.println("Enum creational.singleton");
     }
 }
