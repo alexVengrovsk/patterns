@@ -5,7 +5,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 /**
  * Created by Alex 2016
- * tests
+ * test
  */
 @RunWith(Suite.class)
 @SuiteClasses({AbstractFactoryTest.class,
