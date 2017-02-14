@@ -4,7 +4,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * Created by Alex 2016
+ * Created by Alex 2016_1
+ *
  * tests
  */
 @RunWith(Suite.class)
